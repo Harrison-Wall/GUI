@@ -25,4 +25,5 @@ for( i = 0; i < length; i++)
 }
 
 // ADD NUMBER OF ITEMS IN THE LIST TO THE HEADING
-div.childNodes[3].textContent += " - " + length;
+var lengthSpan = "<span>" + length + "</span>";
+div.children[1].innerHTML += lengthSpan;        // h2 span has right styling in CSS
