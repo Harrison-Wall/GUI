@@ -1,0 +1,59 @@
+<!--
+    Harrison Wall
+    Harrison_Wall@student.uml.edu
+    11/15/18
+    COMP 4610 GUI Programming 1
+    Homework 6 - Creating an Interacitve dynamic table
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Assignment 6</title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="css/a6.css">
+    </head>
+
+    <body>
+        <div id="page">
+            <h2>Welcome to the multiplication table creator!</h2>
+
+            <!-- List of what input I consider valid -->
+            <ul id="rules">
+                <h3>Rules</h3>
+                <li>Integer values only.</li>
+                <li>Values must be in the range of 1-100</li>
+                <li>The min value must be less than the max value</li>
+            </ul>
+
+            <p>Please enter values in the form below:</p>
+
+            <!-- Set up the form for user input-->
+            <div id="form_container">
+                <form id="form">
+                    <label>Min Multiplier   : </label>
+                    <input type="text" name="min_Multiplicand"><br>
+
+                    <label>Max Multiplier   : </label>
+                    <input type="text" name="max_Multiplicand"><br>
+
+                    <label>Min Multiplicand : </label>
+                    <input type="text" name="min_Multiplier"><br>
+
+                    <label>Max Multiplicand : </label>
+                    <input type="text" name="min_Multiplier"><br>
+                </form>
+
+                <button onClick="getInput()">Submit</button> <!-- TODO: change this to use eventListners -->
+            </div>
+
+            <!--Empty table, won't show uo. Just easier to add this way-->
+            <div id="table_container">
+                <table id = "table">
+                </table>
+            </div>
+        </div>
+
+        <script src="js/a6.js"></script>
+    </body>
+</html>
