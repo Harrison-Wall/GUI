@@ -15,11 +15,8 @@ table, th, td
     /*Table should stand out more from background*/
     font-size: 14pt;
     font-weight: bold;
-}
-
-td
-{
-    text-align: center;
+	
+	text-align: center;
     padding: 5px;
 }
 
