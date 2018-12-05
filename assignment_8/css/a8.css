@@ -1,0 +1,46 @@
+/*
+    Harrison Wall
+    Harrison_Wall@student.uml.edu
+    11/15/18
+    COMP 4610 GUI Programming 1
+    Homework 6 - Creating an Interacitve dynamic table
+*/
+
+
+table, th, td 
+{
+    border: 1px solid black;
+    margin: 15px;
+
+    /*Table should stand out more from background*/
+    font-size: 14pt;
+    font-weight: bold;
+}
+
+td
+{
+    text-align: center;
+    padding: 5px;
+}
+
+.header /*Header elements of the table will stand out from the other elements*/
+{
+    color: white;
+    background-color: red;
+}
+
+#form
+{
+   margin: 15px;
+}
+
+li /*Input requirements will stand out to the user*/
+{
+    color: red;
+    font-weight: bold;
+}
+
+body
+{
+    background-color: azure; 
+}

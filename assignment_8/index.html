@@ -1,0 +1,73 @@
+<!--
+    Harrison Wall
+    Harrison_Wall@student.uml.edu
+    12/4/18
+    COMP 4610 GUI Programming 1
+    Homework 8 - Sliders and Tabs
+-->
+
+<!--Followed Examples and documentation here: http://api.jqueryui.com/slider/-->
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Assignment 8</title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="css/a8.css"> 
+        <link href="css/ui-lightness/jquery-ui-1.9.2.custom.css" rel="stylesheet">
+        <link rel="stylesheet" href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.9/themes/base/jquery-ui.css" type="text/css" media="all" /> 
+    </head>
+
+    <body>
+        <div id="page">
+            <h2>Welcome to the multiplication table creator!</h2>
+
+            <!-- List of what input I consider valid -->
+            <ul id="rules">
+                <h3>Rules</h3>
+                <li>Integer values only.</li>
+                <li>Values must be in the range of 1-100</li>
+                <li>The min value must be less than the max value</li>
+            </ul>
+
+            <p id="tester">Please enter values in the form below:</p>
+
+            <!-- Set up the form for user input-->
+            <div id="form_container">
+                <form id="form" name="tableInput" method="GET">
+                    <label>Min Multiplier   : </label><br>
+                    <input id="min_Multiplicand" type="number" name="min_Multiplicand"><br>
+                    <div id="min_Multcnd_slider"></div>
+
+                    <label>Max Multiplier   : </label><br>
+                    <input type="number" id="max_Multiplicand" name="max_Multiplicand"><br>
+                    <div id="max_Multcnd_slider"></div>
+
+                    <label>Min Multiplicand : </label><br>
+                    <input type="number" id="min_Multiplier" name="min_Multiplier"><br>
+                    <div id="min_Multplr_slider"></div>
+
+                    <label>Max Multiplicand : </label><br>
+                    <input type="number" id="max_Multiplier" name="max_Multiplier"><br><br>
+                    <div id="max_Multplr_slider"></div>
+
+                    <input id="submit "type="submit" value="Submit" name="sub_btn">
+                </form>
+            </div>
+
+            <!--Empty table, won't show up. Just easier to add this way-->
+            <div id="table_container">
+                <table id = "table">
+                </table>
+            </div>
+
+        </div>
+
+        <!-- Jquery, Validation.js and my own.js-->
+        <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+        <script src="https://cdn.jsdelivr.net/jquery.validation/1.15.1/jquery.validate.min.js"></script>
+        <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+        <script src="js/a8.js"></script>
+
+    </body>
+</html>
