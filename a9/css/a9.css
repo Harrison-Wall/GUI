@@ -1,0 +1,93 @@
+/*
+    Harrison Wall
+    Harrison_Wall@student.uml.edu
+    COMP 6410 - GUI Programming 1
+    Assignment 9 - Scrabble 
+*/
+
+#pieces_holder
+{
+    /*Fill out the entire image on the screen*/
+    width: 640px;
+    height: 182px;
+    margin: auto;
+    padding-left: 50px; 
+}
+
+/* transparent so we can use the <p> to hold info without letting user know */
+.pieces p, .board_space p
+{
+    color: rgba(0,0,0,0);
+}
+
+.board_space img
+{
+    /*Adjustements so image lines up with board space*/
+    margin-top: 7px;
+    margin-right: 2px;
+}
+  
+.pieces
+{
+    margin-top: 50px;
+    float: left;
+    width: 11.7%;
+}
+
+.tile
+{
+    /*Dimensions of the images being used for tiles*/
+    width: 67px;
+    height: 65px;
+}
+
+#scrabble_board
+{
+    /*size of the board image being used*/
+    width: 524px;
+    height: 80px;
+    margin: auto;
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+
+.board_space
+{
+    /*Each space should fit in between the black lines of the board image*/
+    width: 66px;
+    height: 80px;
+    float: left;
+    margin-left: 8px;
+    margin-bottom: 5px;
+    margin-top: 0px;
+}
+
+#buttons
+{
+    height: 100px;
+    width: 500px;
+    margin: auto;
+    margin-top: 10px;
+    text-align: center;
+}
+
+#info
+{
+    height: 250px;
+    width: 300px;
+
+    border-style: double;
+    border-color: red;
+    border-width: 5px;
+
+    padding: 10px;
+    margin: auto;
+
+    text-align: center;
+    background-color: aliceblue;
+}
+
+body
+{
+    background-color: cornflowerblue;
+}

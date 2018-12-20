@@ -1,0 +1,22 @@
+Harrison Wall
+Harrison_Wall@student.uml.edu
+COMP 4610 - GUI Programming 1
+Assignment 9 - Scrabble Write Up
+
+I was able to pretty much implement what was required. The only real exception
+being the letter distribution is a bit off. It saves a lot of the tiles with the
+most instances for last.
+
+I restricted the user from being able to directly move tiles once they were on the board
+so that those pieces could look much neater. The tiles get hidden and the board pieces 
+contain an image and paragraphm it made it easier to keep track of the tile data.
+
+There are four buttons. submit word which submits the word, generates new tiles for those used
+and adds up the score. Refresh tiles which gives the user a new set of tiles, the old ones get 
+added back to the tile array and are unhhidden, essentiall put back in the original place. 
+Reset tiles which removes any data from the board and unhides used tiles. And calculate word
+score which does as it says, but does not get submitted for a new round.
+
+I opted to force the player to use the 100 pieces given instead of any number of pieces, 
+I figures that kinds defeated the point of the game. Score is kept for multiple words, only used
+pices are replaces and the board is cleared after every round.

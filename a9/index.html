@@ -1,0 +1,110 @@
+<!-- 
+    Harrison Wall
+    Harrison_Wall@student.uml.edu
+    COMP 6410 - GUI Programming 1
+    Assignment 9 - Scrabble 
+-->
+
+<html lang="en">
+    <head>
+        <title>HW9 - Scrabble</title>
+        <meta charset="utf-8"/>
+        <link rel="stylesheet" type="text/css" href="css/a9.css">
+
+        <!--Reqeuired for Jqeury UI-->
+        <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    </head>
+
+    
+    <body>
+
+        <!-- 7 board pieces each with img and transparent p for keeping info -->
+        <div id="scrabble_board" style="background-image: url(images/Scrabble_Board_OneLine.png); background-repeat: no-repeat;">
+            <div id="b1" class="board_space">
+                <img id="b1_image" class="tile" alt="space1">
+                <p></p>     <!--Hidden Char-->
+            </div>
+            <div id="b2" class="board_space">
+                <img id="b2_image" class="tile"  alt="space2">
+                <p></p>     <!--Hidden Char-->
+            </div>
+            <div id="b3" class="board_space">
+                <img id="b3_image" class="tile"  alt="space3">
+                <p></p>     <!--Hidden Char-->
+            </div>
+            <div id="b4" class="board_space">
+                <img id="b4_image" class="tile"  alt="space4">
+                <p></p>     <!--Hidden Char-->
+            </div>
+            <div id="b5" class="board_space">
+                <img id="b5_image" class="tile"  alt="space5"> 
+                <p></p>     <!--Hidden Char-->
+            </div>
+            <div id="b6" class="board_space">
+                <img id="b6_image" class="tile"  alt="space6">
+                <p></p>     <!--Hidden Char-->
+            </div>
+            <div id="b7" class="board_space"> 
+                <img id="b7_image" class="tile"  alt="space7">
+                <p></p>     <!--Hidden Char-->
+            </div>
+        </div>
+
+        <div id="pieces_holder" style="background-image: url(images/Scrabble_Tile_Holder.png); background-repeat: no-repeat;">   
+
+            <!-- 7 tile pieces each with img and transparent p for keeping info -->
+            <div id="pieces_set">
+                <div id="p1" class="pieces">
+                    <img id="p1_image" class="tile"   alt="piece1">
+                    <p id="p1_p"></p>     <!--Hidden Char-->
+                </div>
+                <div id="p2" class="pieces">
+                    <img id="p2_image" class="tile"   alt="piece2">
+                    <p></p>     <!--Hidden Char-->
+                </div>
+                <div id="p3" class="pieces">
+                    <img id="p3_image" class="tile"   alt="piece3">
+                    <p></p>     <!--Hidden Char-->
+                </div>
+                <div id="p4" class="pieces">
+                    <img id="p4_image" class="tile"   alt="piece4">
+                    <p></p>     <!--Hidden Char-->
+                </div>
+                <div id="p5" class="pieces">
+                    <img id="p5_image" class="tile"   alt="piece5">
+                    <p></p>     <!--Hidden Char-->
+                </div>
+                <div id="p6" class="pieces">
+                    <img id="p6_image" class="tile"   alt="piece6">
+                    <p></p>     <!--Hidden Char-->
+                </div>
+                <div id="p7" class="pieces">
+                    <img id="p7_image" class="tile"   alt="piece7">
+                    <p></p>     <!--Hidden Char-->
+                </div>
+            </div>
+            
+        </div>
+
+        <!-- Buttons for scoring and reseting -->
+        <div id="Buttons">
+            <button id="subBut" type="button">Submit Word</button>
+            <button id="refBut" type="button">Refresh Tiles</button>
+            <button id="wrdBut" type="button">Get Word Score</button>
+            <button id="resBut" type="button">Reset Tiles</button>
+        </div>
+
+        <!-- Score information -->
+        <div id="info">
+            <p>Tiles Left:   <p id="tilesLeft">100</p> </p>
+            <p>Current Word Score: <p id="currWord">0</p> </p> 
+            <p>Total Score: <p id="totalScore">0</p> </p> 
+        </div>
+
+        <!-- Jquery and Javascript sources -->
+        <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+        <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+        <script src="js/a9.js"></script>
+
+    </body>
+</html>
